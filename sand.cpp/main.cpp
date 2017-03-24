@@ -1,18 +1,21 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int DemoConsoleOutput() {
-	cout << "This is a simple string literal" << endl;
-	cout << "Writing number fie: " << 5 << endl;
-	cout << "Perfoming division 10 / 5 = " << 10 / 5 << endl;
-	cout << "Pi when approximated is 22 / 7 =" << 22 / 7 << endl;
-	cout << "Pi more accurately is 22 / 7 = " << 22.0 / 7 << endl;
-	return 0;
-}
-
 int main() {
-	//cout << "Hello World!" << endl;
-	//<< std::endl
-	return DemoConsoleOutput();
+	int number;
+	string str;
+
+	cout << "Enter your name:";
+
+	cin >> str;
+
+	cout << "Enter you age:";
+
+	cin >> number;
+
+	cout << "Your name is " + str + " and you are " << number << endl;
+
+	
 }
 
